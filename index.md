@@ -51,11 +51,13 @@ For your first milestone, describe what your project is and how you plan to buil
 
 # Starter Project
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mEfxJg2dxPg?si=QJWWk2v9xTcT-kYd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For my starter project, I built the Retro Game Console. The Retro Game Console lets you play older games such as Tetris and Snake. I learned a lot about soldering during this project, as I had to solder all the parts while making the game console. 
+For my starter project, I built the Retro Game Console. The Retro Game Console lets you play older games such as Tetris and Snake. 
+I learned a lot about soldering during this project, as I had to solder all the parts while making the game console.
+A challenge I faced was that the instructions took some time for me to understand, as I was sometimes unsure what part they were talking about. I overcame this by checking with the instructors often to make sure I'm putting the right part in the right place.
 
 # Schematics 
 <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/051d3645-9ca3-4ccd-89c3-a9552128ebba" alt="IMG_3447" width="300" height="200">
