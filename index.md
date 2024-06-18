@@ -84,6 +84,7 @@ void loop() {
 
 # Bill of Materials 
 
+| **Part** | **Note** | **Price** | **Link** |
 | Vogurtime Handheld Game DIY Kit | This is the kit needed to make the Retro Game Console | $33.99 | <a href="https://www.amazon.com/Soldering-ElectronicsPracticing-Learning-Comfortable-VOGURTIME/dp/B087785JPJ?th=1"> Link </a> |
 
 <!--# Other Resources/Examples
