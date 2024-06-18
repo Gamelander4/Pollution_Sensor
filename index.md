@@ -7,10 +7,8 @@
 |:--:|:--:|:--:|:--:|
 | Praneel N | Homestead High School | Engineering | Incoming Senior
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
-
  <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/7479659a-54e8-4b50-ad81-d1dc5322014e" alt="Praneel_N" width="500" height="500">
+
 
 <!--# Final Milestone
 
