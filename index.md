@@ -7,11 +7,11 @@
 |:--:|:--:|:--:|:--:|
 | Praneel N | Homestead High School | Engineering | Incoming Senior
 
-<!--**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](logo.svg)
+![Praneel_N](https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/37c01e99-86d2-4325-8f3a-c0a8da596f7c)
   
-# Final Milestone
+<!--# Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -55,11 +55,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your starter project, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+For my starter project, I built the Retro Game Console. The Retro Game Console lets you play older games such as Tetris and Snake. I learned a lot about soldering during this project, as I had to solder all the parts while making the game console. 
 
 # Schematics 
 <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/051d3645-9ca3-4ccd-89c3-a9552128ebba" alt="IMG_3447" width="300" height="200">
