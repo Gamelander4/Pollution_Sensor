@@ -41,7 +41,6 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vMsY0QPQG54?si=xhl9RdO6KkTonCTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
 <h2>What I did</h2>
 For my first milestone, I completed the hardware aspect of my project. I soldered the wires in the air quality sensor as well as the temperature and humidity sensor. I then soldered pin headers and the wirings connecting the sensor  into the breadboard. Finally, I soldered the processor and co-processor on top of the pinhearders. 
 <h2>Challenges I faced</h2>
