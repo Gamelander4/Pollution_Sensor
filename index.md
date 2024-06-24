@@ -47,7 +47,7 @@ For my first milestone, I completed the hardware aspect of my project. I soldere
 <h2>Challenges I faced</h2>
 A challenge that I faced was that I accidentally soldered on of the pin headers into the wrong part of the breadboard. Luckily, there were backup parts so I could soldering the pin headers correctly the second time but it taught me to pay attention to where I'm soldering things and make sure that it's correct.
 <h2>Next Steps</h2>
-- The next step is the software aspect of my project, where I write the code that makes sense of the data the sensor is gathering and then display that data. 
+The next step is the software aspect of my project, where I write the code that makes sense of the data the sensor is gathering and then display that data. 
 
 # Starter Project
 
