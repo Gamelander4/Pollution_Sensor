@@ -5,7 +5,7 @@
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Praneel N | Homestead High School | Engineering | Incoming Senior
+| Praneel N | Homestead High School | Engineering/Computer Science | Incoming Senior
 
  <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/7479659a-54e8-4b50-ad81-d1dc5322014e" alt="Praneel_N" height="400">
 
