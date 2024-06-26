@@ -26,7 +26,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMCmXLNTNCk?si=oJy5bk7pQkeJuRhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2>What I did</h2>
 I downloaded the code for the project and tested it to make sure that it works. The code takes the data obtained from the sensors and displays it on the dashboard every 2 minutes.
@@ -40,7 +40,7 @@ I need to add in graphs for temperature and humidity. I also need to gather suff
 
 # First Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dMCmXLNTNCk?si=dgDzs9UOXm1tZf2u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vMsY0QPQG54?si=yv7Xthk3Ny62UNC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2>What I did</h2>
 For my first milestone, I completed the hardware aspect of my project. I soldered the wires in the air quality sensor as well as the temperature and humidity sensor. I then soldered pin headers and the wirings connecting the sensor  into the breadboard. Finally, I soldered the processor and co-processor on top of the pinhearders. 
