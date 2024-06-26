@@ -20,25 +20,27 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- What you hope to learn in the future after everything you've learned at BSE-->
 
 
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone -->
+<h2>What I did</h2>
+I downloaded the code for the project and tested it to make sure that it works. The code takes the data obtained from the sensors and displays it on the dashboard every 2 minutes.
+<h2>Surprises</h2>
+Something that suprised me was that the code on the website was not correct. Because of this, I had to download the code for the project from a different source, which I was not expecting to do. 
+<h2>Challenges</h2>
+I originally tried to run the code in Visual Studio Code (vscode). However, the import statements were not being resolved. I then realized that vscode is meant for circuit python and I have to use Mu Editor instead. Once I loaded the code on Mu Editor, my sensor started collecting data.
+<h2>What's next</h2>
+I need to add in graphs for temperature and humidity. I also need to gather sufficient data in preparation for my modification.
+
 
 # First Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vMsY0QPQG54?si=xhl9RdO6KkTonCTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMCmXLNTNCk?si=dgDzs9UOXm1tZf2u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2>What I did</h2>
 For my first milestone, I completed the hardware aspect of my project. I soldered the wires in the air quality sensor as well as the temperature and humidity sensor. I then soldered pin headers and the wirings connecting the sensor  into the breadboard. Finally, I soldered the processor and co-processor on top of the pinhearders. 
