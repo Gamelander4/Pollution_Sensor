@@ -29,13 +29,13 @@ For your final milestone, explain the outcome of your project. Key details to in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dMCmXLNTNCk?si=oJy5bk7pQkeJuRhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2>What I did</h2>
-I downloaded the code for the project and tested it to make sure that it works. The code takes the data obtained from the sensors and displays it on the dashboard every 2 minutes.
+I downloaded the code for the project and tested it to make sure that it works. I also took the time to understand how the code works. What the code does is that it takes the data obtained from the sensors and displays it on the dashboard every 2 minutes.
 <h2>Surprises</h2>
 Something that suprised me was that the code on the website was not correct. Because of this, I had to download the code for the project from a different source, which I was not expecting to do. 
 <h2>Challenges</h2>
-I originally tried to run the code in Visual Studio Code (vscode). However, the import statements were not being resolved. I then realized that vscode is meant for circuit python and I have to use Mu Editor instead. Once I loaded the code on Mu Editor, my sensor started collecting data.
+I originally tried to run the code in Visual Studio Code (vscode). However, the import statements were not being resolved. I then realized that vscode is not meant for circuit python and I have to use Mu Editor instead. Once I loaded the code on Mu Editor, my sensor started collecting data.
 <h2>What's next</h2>
-I need to add in graphs for temperature and humidity. I also need to gather sufficient data in preparation for my modification.
+I need to add in graphs for temperature and humidity both for the last 24 hours and the last week, similar to the graphs that I currently have for the AQI. I also need to gather sufficient data in preparation for my modification, which is to use the data I gathered in a neural network that predicts the weather.
 
 
 # First Milestone
