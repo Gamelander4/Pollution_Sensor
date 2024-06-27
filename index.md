@@ -31,7 +31,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 <h2>What I did</h2>
 I downloaded the code for the project and tested it to make sure that it works. I also took the time to understand how the code works. What the code does is that it takes the data obtained from the sensors and displays it on the dashboard every 2 minutes.
 <h2>Surprises</h2>
-Something that suprised me was that the code on the website was not correct. Because of this, I had to download the code for the project from a different source, which I was not expecting to do. 
+Something that suprised me was that the code on the website was not correct. Because of this, I had to download the code for the project from a different source, which I was not expecting to do. Another thing that surprised me was the size of the project, as I thought it would be bigger but it reality, the size of the project is small.
 <h2>Challenges</h2>
 I originally tried to run the code in Visual Studio Code (vscode). However, the import statements were not being resolved. I then realized that vscode is not meant for circuit python and I have to use Mu Editor instead. Once I loaded the code on Mu Editor, my sensor started collecting data.
 <h2>What's next</h2>
