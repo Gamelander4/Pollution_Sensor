@@ -9,18 +9,30 @@
 
  <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/7479659a-54e8-4b50-ad81-d1dc5322014e" alt="Praneel_N" height="400">
 
-
-<!--# Final Milestone
-
+# Modifcations
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE-->
+- What you hope to learn in the future after everything you've learned at BSE
+
+
+# Final Milestone
+
+**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vHDEtg5ytWw?si=uTkCt4cZHXHNpiO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2>What I did</h2>
+I collected a few days worth of data, as I would need that data for potential machine learning modifications. In addition, I refined the dashboard that displays the data, since the default 
+<h2>Surprises</h2>
+
+<h2>Challenges</h2>
+
+<h2>What's next</h2>
 
 
 
@@ -82,11 +94,11 @@ import supervisor
 import gc
 import adafruit_pm25
 import adafruit_bme280
+import adafruit_scd4x
 from adafruit_bme280 import basic as adafruit_bme280
 #from adafruit_bme280 import Adafruit_BME280_I2C
 
 print("xasdasd")
-
 
 # Sensor Functions
 def calculate_aqi(pm_sensor_reading):
@@ -121,7 +133,7 @@ def calculate_aqi(pm_sensor_reading):
             aqi_cat = "Hazardous"
         elif 350.5 <= pm_sensor_reading <= 500.4:
             aqi_val = map_range(int(pm_sensor_reading), 351, 500, 401, 500)
-            aqi_cat = "Hazardous"
+            aqi_cat = "Extremely Hazardous"
         else:
             print("Invalid PM2.5 concentration")
             aqi_val = -1
@@ -193,7 +205,20 @@ def read_bme(is_celsius=False):
     except (ValueError, RuntimeError, ConnectionError, OSError) as e:
         print("Failed to fetch time, retrying\n", e)
         supervisor.reload()
-
+def read_CO2():
+    try:
+        scd4x.start_periodic_measurement()
+        t=0
+        CO2 = 0
+        while t<1:
+            if scd4x.data_ready:
+                t += 1
+                CO2 = scd4x.CO2
+            time.sleep(1)
+        scd4x.stop_periodic_measurement()
+        return CO2
+    except Exception as e:
+        print(e)
 
 gc.enable()
 #microcontroller.on_next_reset(microcontroller.RunMode.NORMAL)
@@ -206,7 +231,7 @@ gc.enable()
 # Return environmental sensor readings in degrees Celsius
 USE_CELSIUS = False
 # Interval the sensor publishes to Adafruit IO, in minutes
-PUBLISH_INTERVAL = 2
+PUBLISH_INTERVAL = 0.2
 
 ### WiFi ###
 # Get wifi details and more from a secrets.py file
@@ -232,7 +257,7 @@ esp = adafruit_esp32spi.ESP_SPIcontrol(
 wifi = adafruit_esp32spi_wifimanager.ESPSPI_WiFiManager(esp, secrets, status_pixel=None, attempts=4)
 print("Connecting to WiFi...")
 wifi.connect()
-print("Connected to WiFi with IP Address:", wifi.esp.pretty_ip(wifi.esp.ip_address))
+print("Connected to WiFi with name -", secrets['ssid'])
 # Connect to a PM2.5 sensor over UART
 reset_pin = DigitalInOut(board.D9)
 reset_pin.direction = Direction.OUTPUT
@@ -249,12 +274,9 @@ i2c = board.I2C()
 
 # Connect to a BME280 over I2C
 bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, address=0x77)
+scd4x = adafruit_scd4x.SCD4X(i2c, address=0x62)
 # Uncomment below for PMSA003I Air Quality Breakout
 #pm25 = PM25_I2C(i2c, reset_pin)
-
-# Uncomment below for BME680
-# import adafruit_bme680
-# bme_sensor = adafruit_bme680.Adafruit_BME680_I2C(i2c)
 
 
 # Create an instance of the Adafruit IO HTTP client
@@ -266,7 +288,7 @@ feed_aqi_category = io.get_feed("air-quality-sensor.category")
 feed_humidity = io.get_feed("air-quality-sensor.humidity")
 feed_temperature = io.get_feed("air-quality-sensor.temperature")
 feed_pressure = io.get_feed("air-quality-sensor.pressure")
-
+feed_CO2 = io.get_feed("air-quality-sensor.co2")
 # Set up location metadata from secrets.py file
 location_metadata = {
     "lat": secrets["latitude"],
@@ -310,12 +332,14 @@ while True:
             print("AQI: %d" % aqi)
             print("Category: %s" % aqi_category)
 
-            # temp and humidity
-            print("Sampling environmental sensor...")
+            # temp humidity, pressure, and CO2
+            print("Sampling BME280 and SCD41 sensors...")
             temperature, humidity, pressure = read_bme(USE_CELSIUS)
+            CO2 = read_CO2()
             print("Temperature: %0.1f F" % temperature)
             print("Humidity: %0.1f %%" % humidity)
             print("Pressure: %0.1f hPa" % pressure)
+            print("CO2: %0.1f ppm" % CO2)
 
 
             # Publish all values to Adafruit IO
@@ -325,15 +349,76 @@ while True:
             io.send_data(feed_temperature["key"], str(temperature))
             io.send_data(feed_humidity["key"], str(humidity))
             io.send_data(feed_pressure["key"], str(pressure))
-            print("Published!")
+            io.send_data(feed_CO2["key"], str(CO2))
+            print("Published")
             elapsed_minutes = 0
     except (ValueError, RuntimeError, ConnectionError, OSError) as e:
         print("Failed to send data to IO, retrying\n", e)
         supervisor.reload()
         # Reset timer
     time.sleep(30)
+```
 
-``` 
+```python
+import pandas as pd
+import numpy as np
+import xgboost as xg 
+from matplotlib import pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+
+data_ori = pd.read_csv("data.csv", header=0, names=['Year', 'Months', 'Days', 'Hours', 'Minutes', 'Seconds', 'AQI', 'Humidity', 'Pressure', 'CO2', 'Temperature'])
+data = data_ori.copy()
+test_data = pd.read_csv('predict_data.csv', header=0, names=['Year', 'Months', 'Days', 'Hours', 'Minutes', 'Seconds', 'AQI', 'Humidity', 'Pressure', 'CO2'])
+y = data.pop('Temperature')
+X = np.array(data)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.65, shuffle=True, random_state=50)
+
+#Random Forest
+model = RandomForestRegressor(n_estimators=20, random_state=50)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+temp_pred = model.predict(test_data)
+print(temp_pred)
+
+#Linear Regression
+"""model = LinearRegression()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)"""
+
+#Polynomial Regression
+"""degree = 2
+poly_features = PolynomialFeatures(degree=degree)
+X_train_poly = poly_features.fit_transform(X_train)
+X_test_poly = poly_features.transform(X_test)
+model = LinearRegression()
+model.fit(X_train_poly, y_train)
+y_pred = model.predict(X_test_poly)"""
+
+#XGBoost
+"""model = xg.XGBRegressor(objective ='reg:linear', n_estimators = 10, seed = 123)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)"""
+
+mse = mean_squared_error(y_test, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print(f"Mean Squared Error: {mse}")
+print(f"Mean Absolute Error: {mae}")
+print(f"R-squared: {r2}")
+
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred, alpha=0.7)
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], '--r', linewidth=2)
+plt.xlabel('Actual Values')
+plt.ylabel('Predicted Values')
+plt.title('Actual vs Predicted Values (Random Forest Regression)')
+plt.show()
+```
 
 <h2>Bill of Materials</h2> 
 
