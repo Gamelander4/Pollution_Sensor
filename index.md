@@ -12,16 +12,20 @@
 # Modifcations
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FUxozmPNDVo?si=du50Sbq5H2Rk9hlL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+
+<h2>What I did</h2>
+For my modifications, I added an CO2 sensor to my project. For the sensor, I had to solder the wires connecting the sensor to the doubler and then write the code that reads the data from the sensor and displays it on my dashboard. I also realized that the sensor I use for temperature and humidity also has air pressure, so I wrote the code to read that and incorperated that into my dashboard. Another modification I did was 3D print an enclosure for my project, as I need a case that would fit my project. In addition, I used the data I got from my sensors to create a machine learning model that predicts the temperature accurately. 
+<h2>Challenges</h2>
+Writing the code for the CO2 sensor was challenging, as I had to learn about and use different functions from my other sensor to make it work. 3D printing my enclosure was also challenging, as this was my first time 3D printing and it took a while to figure out how to use the CAD software to create a 3D model for my enclosure. In addition, the hole for the USB cable in my first enclosure was too small and I forgot to consider how my sensors will stay upright, meaning I had to redesign and print my enclosure. 
+<h2>Topics I learned about at BSE</h2>
+I learned a lot about hardware at BSE: such as how to solder, what is a breadboard and the pins on a breadboard, and how 3D printing works. I also learned about  types of machine learning models I have not heard of before and how to implement them. In addition, I learned life skills at BSE, such as resilience and practicing problem solving skills.
+<h2>What I want to learn after BSE</h2>
+After BSE, I want to learn more about how hardware combines with software, as my introduction to hardware at BSE and my previous experience with software makes me want to explore this topic. I also want to learn about how to make these kinds of projects at home, as these were very fun and I would like to do more of them.
 
 
 # Final Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vHDEtg5ytWw?si=uTkCt4cZHXHNpiO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FUxozmPNDVo?si=XlT-isqdq8HuzQwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2>What I did</h2>
 I collected a few days worth of data, as I would need that data for potential machine learning modifications. In addition, I refined the dashboard that displays the data, since the default display was unintuitive.
@@ -417,10 +421,6 @@ plt.title('Actual vs Predicted Values (Random Forest Regression)')
 plt.show()
 ```
 
-<h2>Bill of Materials</h2> 
-
-| **Part** | **Note** | **Price** | **Link** |
-| Vogurtime Handheld Game DIY Kit | This is the kit needed to make the Retro Game Console | $33.99 | <a href="https://www.amazon.com/Soldering-ElectronicsPracticing-Learning-Comfortable-VOGURTIME/dp/B087785JPJ?th=1"> Link </a> |
 
 <!--# Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
