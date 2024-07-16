@@ -5,7 +5,7 @@
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Praneel N | Homestead High School | Engineering/Computer Science | Incoming Senior
+| Praneel N | Homestead High School | Engineering/Computer Science | Incoming Senior |
 
  <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/7479659a-54e8-4b50-ad81-d1dc5322014e" alt="Praneel_N" height="400">
 
@@ -430,6 +430,7 @@ plt.show()
 ```
 # Bill of Materials
 | **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
 | Adafruit Feather M4 Express - Featuring ATSAMD51 | This is the main processor for the project | $22.95 | <a href="https://www.adafruit.com/product/3857"> Link </a> |
 | Adafruit AirLift FeatherWing – ESP32 WiFi Co-Processor | This is the processor that connects to the Wi-Fi | $12.95 | <a href="https://www.adafruit.com/product/4264"> Link </a> |
 | PM2.5 Air Quality Sensor and Breadboard Adapter Kit | This sensor detects PM2.5, which are fine particles in the air | $39.95 | <a href="https://www.adafruit.com/product/3686"> Link </a> |
