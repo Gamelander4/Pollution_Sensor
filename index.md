@@ -10,9 +10,8 @@
  <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/7479659a-54e8-4b50-ad81-d1dc5322014e" alt="Praneel_N" height="400">
 
 # Modifcations
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FUxozmPNDVo?si=du50Sbq5H2Rk9hlL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
@@ -22,18 +21,16 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vHDEtg5ytWw?si=uTkCt4cZHXHNpiO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2>What I did</h2>
-I collected a few days worth of data, as I would need that data for potential machine learning modifications. In addition, I refined the dashboard that displays the data, since the default 
+I collected a few days worth of data, as I would need that data for potential machine learning modifications. In addition, I refined the dashboard that displays the data, since the default display was unintuitive.
 <h2>Surprises</h2>
-
+Something that surprised me was that sometimes, the temperature sensor would get a higher reading than what the temperature is on the weather app. This is suprising because since the sensor is reading the weather at my exact location, that means the weather app only provides the weather for my general area, which I did not know.
 <h2>Challenges</h2>
-
+One challenge I faced was that sometimes, the code would crash. It did not happen that often so when it did happen, I would just restart it and it would run as normal. 
 <h2>What's next</h2>
-
+Next is the modifications. A modification idea that I have is using the data I have in a machine learning model that predicts temperature, which essentially creates my own weather forecast. I am also thinking of 3D printing an enclosure for my project, as I currently do not have a case for it.
 
 
 # Second Milestone
