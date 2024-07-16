@@ -430,6 +430,7 @@ plt.title('Actual vs Predicted Values (Random Forest Regression)')
 plt.show()
 ```
 # Bill of Materials
+
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Adafruit Feather M4 Express - Featuring ATSAMD51 | This is the main processor for the project | $22.95 | <a href="https://www.adafruit.com/product/3857"> Link </a> |
