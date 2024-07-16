@@ -80,7 +80,7 @@ A challenge I faced was that the instructions took some time for me to understan
 
 | **Part** | **Note** | **Price** | **Link** |
 | Vogurtime Handheld Game DIY Kit | This is the kit needed to make the Retro Game Console | $33.99 | <a href="https://www.amazon.com/Soldering-ElectronicsPracticing-Learning-Comfortable-VOGURTIME/dp/B087785JPJ?th=1"> Link </a> |
-| a | b | c | d |
+|a|b|c|d|
 
 <!--Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser.-->
 
@@ -430,7 +430,7 @@ plt.show()
 ```
 # Bill of Materials
 | **Part** | **Note** | **Price** | **Link** |
-| Adafruit Feather M4 Express - Featuring ATSAMD51| This is the main processor for the project | $22.95 | <a href="https://www.adafruit.com/product/3857"> Link </a> |
+| Adafruit Feather M4 Express - Featuring ATSAMD51 | This is the main processor for the project | $22.95 | <a href="https://www.adafruit.com/product/3857"> Link </a> |
 | Adafruit AirLift FeatherWing – ESP32 WiFi Co-Processor | This is the processor that connects to the Wi-Fi | $12.95 | <a href="https://www.adafruit.com/product/4264"> Link </a> |
 | PM2.5 Air Quality Sensor and Breadboard Adapter Kit | This sensor detects PM2.5, which are fine particles in the air | $39.95 | <a href="https://www.adafruit.com/product/3686"> Link </a> |
 | Adafruit BME280 I2C or SPI Temperature Humidity Pressure Sensor | This sensor detects the temperature, humidity, and pressure of the local area | $14.95 | <a href="https://www.adafruit.com/product/2652"> Link </a> |
