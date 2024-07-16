@@ -73,10 +73,10 @@ I learned a lot about soldering during this project, as I had to solder all the 
 <h2>Challenges</h2>
 A challenge I faced was that the instructions took some time for me to understand, as I was sometimes unsure what part they were talking about. I overcame this by checking with the instructors often to make sure I'm putting the right part in the right place.
 
-<h2>Schematics</h2>  
+<h2>Starter Project Schematic</h2>  
 <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/051d3645-9ca3-4ccd-89c3-a9552128ebba" alt="IMG_3447" width="300" height="200">
 
-<h2>Bill of Materials</h2> 
+<h2>Starter Project Bill of Materials</h2> 
 
 | **Part** | **Note** | **Price** | **Link** |
 | Vogurtime Handheld Game DIY Kit | This is the kit needed to make the Retro Game Console | $33.99 | <a href="https://www.amazon.com/Soldering-ElectronicsPracticing-Learning-Comfortable-VOGURTIME/dp/B087785JPJ?th=1"> Link </a> |
