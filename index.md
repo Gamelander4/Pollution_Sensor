@@ -87,6 +87,7 @@ A challenge I faced was that the instructions took some time for me to understan
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```python
+#This is the code that reads the sensor data and displays it to the dashboard
 import time
 import board
 import busio
@@ -366,6 +367,7 @@ while True:
 ```
 
 ```python
+#This is the code for all my machine learning models
 import pandas as pd
 import numpy as np
 import xgboost as xg 
@@ -425,6 +427,14 @@ plt.ylabel('Predicted Values')
 plt.title('Actual vs Predicted Values (Random Forest Regression)')
 plt.show()
 ```
+# Bill of Materials
+| **Part** | **Note** | **Price** | **Link** |
+| Adafruit Feather M4 Express - Featuring ATSAMD51| This is the main processor for the project | $22.95 | <a href="https://www.adafruit.com/product/3857"> Link </a> |
+| Adafruit AirLift FeatherWing – ESP32 WiFi Co-Processor | This is the processor that connects to the Wi-Fi | $12.95 | <a href="https://www.adafruit.com/product/4264"> Link </a> |
+| PM2.5 Air Quality Sensor and Breadboard Adapter Kit | This sensor detects PM2.5, which are fine particles in the air | $39.95 | <a href="https://www.adafruit.com/product/3686"> Link </a> |
+| Adafruit BME280 I2C or SPI Temperature Humidity Pressure Sensor | This sensor detects the temperature, humidity, and pressure of the local area | $14.95 | <a href="https://www.adafruit.com/product/2652"> Link </a> |
+| FeatherWing Doubler - Prototyping Add-on For All Feather Boards | The sensors connect to certain pins on this doubler, which connects to the processors through pin headers | $7.50 | <a href="https://www.adafruit.com/product/2890"> Link </a> |
+| SCD41 Gas Sensor Module detects CO2, Carbon Dioxide, Temperature and Humidity 2 in 1 Sensor I2C Communication SCD40 Gas Sensor Module | This sensor detects the CO2 levels in the local area | $35.99 | <a href="https://www.amazon.com/AITRIP-detects-Temperature-Humidity-Communication/dp/B0BW47LQTD"> Link </a> |
 
 
 <!--# Other Resources/Examples
