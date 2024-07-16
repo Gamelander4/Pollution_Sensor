@@ -9,6 +9,8 @@
 
  <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/7479659a-54e8-4b50-ad81-d1dc5322014e" alt="Praneel_N" height="400">
 
+# My Project
+
 # Modifcations
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FUxozmPNDVo?si=du50Sbq5H2Rk9hlL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -85,7 +87,7 @@ A challenge I faced was that the instructions took some time for me to understan
 <!--Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser.-->
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+<h2>Main Code</h2>
 
 ```python
 #This is the code that reads the sensor data and displays it to the dashboard
@@ -366,6 +368,7 @@ while True:
         # Reset timer
     time.sleep(30)
 ```
+<h2>Machine Learning Code</h2>
 
 ```python
 #This is the code for all my machine learning models
@@ -428,6 +431,10 @@ plt.ylabel('Predicted Values')
 plt.title('Actual vs Predicted Values (Random Forest Regression)')
 plt.show()
 ```
+
+# Machine Learning Graphs
+
+
 # Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
