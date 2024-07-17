@@ -435,23 +435,19 @@ plt.show()
 
 # Machine Learning Graphs
 <div class='row'>
-    <h3>Linear Regression Graph</h3>
-    <h3 style="margin-top: 10px; margin-bottom: 20px;">Random Forest Regression Graph</h3>
-</div>
-<div class='row'>
-    <img src="Linear Regression.png" height="300">
-    <img src="Random Forest.png" height="300">
-</div>
-<div class='row'>
-    <h3>Polynomial Regression</h3>
-    <img src="Polynomial Regression.png" height="300"> 
-</div>
-<div class='row'>
-    <h3>XGBoost</h3>
-    <img src="XGBoost.png" height="300">
-</div>
-
-        
+    <div class='column'>
+        <h3>Linear Regression Graph</h3>
+        <img src="Linear Regression.png" height="300">
+        <h3>Polynomial Regression Graph</h3>
+        <img src="Polynomial Regression.png" height="300">
+    </div>
+    <div class='column'>
+        <h3>Random Forest Regression</h3>
+        <img src="Random Forest.png" height="300"> 
+        <h3>XGBoost</h3>
+        <img src="XGBoost.png" height="300">
+    </div>
+</div>     
 
 # Bill of Materials
 
