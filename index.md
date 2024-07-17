@@ -434,9 +434,9 @@ plt.show()
 ```
 
 # Machine Learning Graphs
-<h2>Linear Regression Graph</h2>                      <h2>Random Forest Graph</h2>
+<h1>Linear Regression Graph</h1>                      <h1>Random Forest Graph</h1>
 <img src="Linear Regression.png" height="300">        <img src="Random Forest.png" height="300">
-<h2>Polynomial Regression Graph</h2>                      <h2>XGBoost Regression Graph</h2>
+<h1>Polynomial Regression Graph</h1>                      <h1>XGBoost Regression Graph</h1>
 <img src="Polynomial Regression.png" height="300">        <img src="XGBoost.png" height="300">
 
 # Bill of Materials
