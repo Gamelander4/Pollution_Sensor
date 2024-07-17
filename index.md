@@ -454,6 +454,8 @@ plt.show()
         <img src="XGBoost.png" height="300">
     </div>
 </div>
+
+I've still yet to find the optimal hyperparameters for each model but as of now, Random Forest and Polynomial Regression performed the best, since most of the predictions are near the line of perfect predictions. 
     
 
 # Bill of Materials
