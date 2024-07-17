@@ -436,10 +436,10 @@ plt.show()
 # Machine Learning Graphs
 <div class='row'>
     <h3>Linear Regression</h3>
-    <img src="Linear Regression.png" height="300">
+    <h3>Random Forest</h3>
 </div>
 <div class='row'>
-    <h3>Random Forest</h3>
+    <img src="Linear Regression.png" height="300">
     <img src="Random Forest.png" height="300">
 </div>
 <div class='row'>
