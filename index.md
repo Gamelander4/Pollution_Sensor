@@ -444,6 +444,7 @@ plt.show()
         <img src="Random Forest.png" height="300">
     </div>
 </div>
+
 <div class='row'>
     <div style="text-align:center; display:inline-block; width:48%; margin-right:1%;">
         <h3>Polynomial Regression</h3>
