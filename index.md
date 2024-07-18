@@ -39,6 +39,31 @@ One challenge I faced was that sometimes, the code would crash. It did not happe
 <h2>What's next</h2>
 Next is the modifications. A modification idea that I have is using the data I have in a machine learning model that predicts temperature, which essentially creates my own weather forecast. I am also thinking of 3D printing an enclosure for my project, as I currently do not have a case for it.
 
+# Machine Learning Graphs
+<div class='row'>
+    <div style="text-align:center; display:inline-block; width:48%; margin-right:1%;">
+        <h3>Linear Regression</h3>
+        <img src="Linear Regression.png" height="300">
+    </div>
+    <div style="text-align:center; display:inline-block; width:48%; margin-left:1%;">
+        <h3>Random Forest</h3>
+        <img src="Random Forest.png" height="300">
+    </div>
+</div>
+
+<div class='row'>
+    <div style="text-align:center; display:inline-block; width:48%; margin-right:1%;">
+        <h3>Polynomial Regression</h3>
+        <img src="Polynomial Regression.png" height="300">
+    </div>
+    <div style="text-align:center; display:inline-block; width:48%; margin-left:1%;">
+        <h3>XGBoost</h3>
+        <img src="XGBoost.png" height="300">
+    </div>
+</div>
+
+As of now, Random Forest and Polynomial Regression performed the best, since most of the predictions are near the line of perfect predictions However, I still need to collect more data and modify the models so they have the optimal hyperparameters to make the models even more accurate.
+    
 
 # Second Milestone
 
@@ -431,32 +456,6 @@ plt.ylabel('Predicted Values')
 plt.title('Actual vs Predicted Values (Random Forest Regression)')
 plt.show()
 ```
-
-# Machine Learning Graphs
-<div class='row'>
-    <div style="text-align:center; display:inline-block; width:48%; margin-right:1%;">
-        <h3>Linear Regression</h3>
-        <img src="Linear Regression.png" height="300">
-    </div>
-    <div style="text-align:center; display:inline-block; width:48%; margin-left:1%;">
-        <h3>Random Forest</h3>
-        <img src="Random Forest.png" height="300">
-    </div>
-</div>
-
-<div class='row'>
-    <div style="text-align:center; display:inline-block; width:48%; margin-right:1%;">
-        <h3>Polynomial Regression</h3>
-        <img src="Polynomial Regression.png" height="300">
-    </div>
-    <div style="text-align:center; display:inline-block; width:48%; margin-left:1%;">
-        <h3>XGBoost</h3>
-        <img src="XGBoost.png" height="300">
-    </div>
-</div>
-
-I've still yet to find the optimal hyperparameters for each model but as of now, Random Forest and Polynomial Regression performed the best, since most of the predictions are near the line of perfect predictions. 
-    
 
 # Bill of Materials
 
