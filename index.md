@@ -25,20 +25,6 @@ I learned a lot about hardware at BSE: such as how to solder, what is a breadboa
 <h2>What I want to learn after BSE</h2>
 After BSE, I want to learn more about how hardware combines with software, as my introduction to hardware at BSE and my previous experience with software makes me want to explore this topic. I also want to learn about how to make these kinds of projects at home, as these were very fun and I would like to do more of them.
 
-
-# Final Milestone
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FUxozmPNDVo?si=XlT-isqdq8HuzQwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h2>What I did</h2>
-I collected a few days worth of data, as I would need that data for potential machine learning modifications. In addition, I refined the dashboard that displays the data, since the default display was unintuitive.
-<h2>Surprises</h2>
-Something that surprised me was that sometimes, the temperature sensor would get a higher reading than what the temperature is on the weather app. This is suprising because since the sensor is reading the weather at my exact location, that means the weather app only provides the weather for my general area, which I did not know.
-<h2>Challenges</h2>
-One challenge I faced was that sometimes, the code would crash. It did not happen that often so when it did happen, I would just restart it and it would run as normal. 
-<h2>What's next</h2>
-Next is the modifications. A modification idea that I have is using the data I have in a machine learning model that predicts temperature, which essentially creates my own weather forecast. I am also thinking of 3D printing an enclosure for my project, as I currently do not have a case for it.
-
 # Machine Learning Graphs
 <div class='row'>
     <div style="text-align:center; display:inline-block; width:48%; margin-right:1%;">
@@ -64,6 +50,19 @@ Next is the modifications. A modification idea that I have is using the data I h
 
 As of now, Random Forest and Polynomial Regression performed the best, since most of the predictions are near the line of perfect predictions However, I still need to collect more data and modify the models so they have the optimal hyperparameters to make the models even more accurate.
     
+
+# Final Milestone
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FUxozmPNDVo?si=XlT-isqdq8HuzQwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2>What I did</h2>
+I collected a few days worth of data, as I would need that data for potential machine learning modifications. In addition, I refined the dashboard that displays the data, since the default display was unintuitive.
+<h2>Surprises</h2>
+Something that surprised me was that sometimes, the temperature sensor would get a higher reading than what the temperature is on the weather app. This is suprising because since the sensor is reading the weather at my exact location, that means the weather app only provides the weather for my general area, which I did not know.
+<h2>Challenges</h2>
+One challenge I faced was that sometimes, the code would crash. It did not happen that often so when it did happen, I would just restart it and it would run as normal. 
+<h2>What's next</h2>
+Next is the modifications. A modification idea that I have is using the data I have in a machine learning model that predicts temperature, which essentially creates my own weather forecast. I am also thinking of 3D printing an enclosure for my project, as I currently do not have a case for it.
 
 # Second Milestone
 
