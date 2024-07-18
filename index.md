@@ -25,7 +25,69 @@ I learned a lot about hardware at BSE: such as how to solder, what is a breadboa
 <h2>What I want to learn after BSE</h2>
 After BSE, I want to learn more about how hardware combines with software, as my introduction to hardware at BSE and my previous experience with software makes me want to explore this topic. I also want to learn about how to make these kinds of projects at home, as these were very fun and I would like to do more of them.
 
-# Machine Learning Graphs
+<h2>Machine Learning Code</h2>
+
+```python
+import pandas as pd
+import numpy as np
+import xgboost as xg 
+from matplotlib import pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+
+data_ori = pd.read_csv("data.csv", header=0, names=['Year', 'Months', 'Days', 'Hours', 'Minutes', 'Seconds', 'AQI', 'Humidity', 'Pressure', 'CO2', 'Temperature'])
+data = data_ori.copy()
+test_data = pd.read_csv('predict_data.csv', header=0, names=['Year', 'Months', 'Days', 'Hours', 'Minutes', 'Seconds', 'AQI', 'Humidity', 'Pressure', 'CO2'])
+y = data.pop('Temperature')
+X = np.array(data)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.65, shuffle=True, random_state=50)
+
+#Random Forest
+model = RandomForestRegressor(n_estimators=20, random_state=50)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+temp_pred = model.predict(test_data)
+print(temp_pred)
+
+#Linear Regression
+"""model = LinearRegression()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)"""
+
+#Polynomial Regression
+"""degree = 4
+poly_features = PolynomialFeatures(degree=degree)
+X_train_poly = poly_features.fit_transform(X_train)
+X_test_poly = poly_features.transform(X_test)
+model = LinearRegression()
+model.fit(X_train_poly, y_train)
+y_pred = model.predict(X_test_poly)"""
+
+#XGBoost
+"""model = xg.XGBRegressor(objective ='reg:linear', n_estimators = 10, seed = 123)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)"""
+
+mse = mean_squared_error(y_test, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print(f"Mean Squared Error: {mse}")
+print(f"Mean Absolute Error: {mae}")
+print(f"R-squared: {r2}")
+
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred, alpha=0.7)
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], '--r', linewidth=2)
+plt.xlabel('Actual Values')
+plt.ylabel('Predicted Values')
+plt.title('Actual vs Predicted Values (Random Forest Regression)')
+plt.show()
+```
+<h2>Machine Learning Graphs</h2>
 <div class='row'>
     <div style="text-align:center; display:inline-block; width:48%; margin-right:1%;">
         <h3>Linear Regression</h3>
@@ -392,68 +454,6 @@ while True:
         supervisor.reload()
         # Reset timer
     time.sleep(30)
-```
-<h2>Machine Learning Code</h2>
-
-```python
-import pandas as pd
-import numpy as np
-import xgboost as xg 
-from matplotlib import pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-
-data_ori = pd.read_csv("data.csv", header=0, names=['Year', 'Months', 'Days', 'Hours', 'Minutes', 'Seconds', 'AQI', 'Humidity', 'Pressure', 'CO2', 'Temperature'])
-data = data_ori.copy()
-test_data = pd.read_csv('predict_data.csv', header=0, names=['Year', 'Months', 'Days', 'Hours', 'Minutes', 'Seconds', 'AQI', 'Humidity', 'Pressure', 'CO2'])
-y = data.pop('Temperature')
-X = np.array(data)
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.65, shuffle=True, random_state=50)
-
-#Random Forest
-model = RandomForestRegressor(n_estimators=20, random_state=50)
-model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
-temp_pred = model.predict(test_data)
-print(temp_pred)
-
-#Linear Regression
-"""model = LinearRegression()
-model.fit(X_train, y_train)
-y_pred = model.predict(X_test)"""
-
-#Polynomial Regression
-"""degree = 4
-poly_features = PolynomialFeatures(degree=degree)
-X_train_poly = poly_features.fit_transform(X_train)
-X_test_poly = poly_features.transform(X_test)
-model = LinearRegression()
-model.fit(X_train_poly, y_train)
-y_pred = model.predict(X_test_poly)"""
-
-#XGBoost
-"""model = xg.XGBRegressor(objective ='reg:linear', n_estimators = 10, seed = 123)
-model.fit(X_train, y_train)
-y_pred = model.predict(X_test)"""
-
-mse = mean_squared_error(y_test, y_pred)
-mae = mean_absolute_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
-
-print(f"Mean Squared Error: {mse}")
-print(f"Mean Absolute Error: {mae}")
-print(f"R-squared: {r2}")
-
-plt.figure(figsize=(10, 6))
-plt.scatter(y_test, y_pred, alpha=0.7)
-plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], '--r', linewidth=2)
-plt.xlabel('Actual Values')
-plt.ylabel('Predicted Values')
-plt.title('Actual vs Predicted Values (Random Forest Regression)')
-plt.show()
 ```
 
 # Bill of Materials
