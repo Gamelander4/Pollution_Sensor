@@ -372,7 +372,6 @@ while True:
 <h2>Machine Learning Code</h2>
 
 ```python
-#This is the code for all my machine learning models
 import pandas as pd
 import numpy as np
 import xgboost as xg 
@@ -403,7 +402,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)"""
 
 #Polynomial Regression
-"""degree = 2
+"""degree = 4
 poly_features = PolynomialFeatures(degree=degree)
 X_train_poly = poly_features.fit_transform(X_train)
 X_test_poly = poly_features.transform(X_test)
