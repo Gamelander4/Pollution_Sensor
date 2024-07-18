@@ -10,7 +10,7 @@
 <img src="https://github.com/Gamelander4/Pollution_Sensor/assets/116457189/7479659a-54e8-4b50-ad81-d1dc5322014e" alt="Praneel_N" height="400">
 
 # My Project
-<img src="Project.jpg" height="200">
+<img src="Project.jpg" width ="300" height="300">
 
 # Modifcations
 
